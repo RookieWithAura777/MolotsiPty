@@ -199,3 +199,40 @@ footer a {
   font-size: 0.95rem;
 }
 
+/* BRAND BANNER */
+.brand-banner {
+  background: #020617;
+  overflow: hidden;
+  padding: 0.8rem 0;
+}
+
+.brand-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-brands 35s linear infinite;
+}
+
+.brand-track span {
+  margin-right: 3rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  color: #cbd5f5;
+  text-transform: uppercase;
+}
+
+@keyframes scroll-brands {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+.brand-banner:hover .brand-track {
+  animation-play-state: paused;
+}
+
+
